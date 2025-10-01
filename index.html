@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Bercerita - Jelajahi Keindahan Alam Indonesia</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">🌿 Alam Bercerita</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinasi">Informasi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary-custom">Mulai Eksplorasi</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <!-- === HERO SECTION === -->
+        <section class="hero-section" id="beranda">
+            <video autoplay muted id="hero-video" 
+                   data-video-list="buku.mp4,alam1.mp4,perahu.mp4,belajar buku.mp4,bawah laut.mp4,hewan.mp4,burung.mp4" 
+                   data-current-index="0"
+                   data-video-titles="MENAMBAH PENGETAHUAN, MENJADI LEBIH TAU TENTANG ALAM, BANYAK FAKTA UNIK, LINDUNGI NUSANTARA, KOMUNITAS PEDULI, CERITA DI BALIK FOTO, PETUALANGAN DIMULAI"
+            >
+            </video>
+            
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <!-- Judul dan Deskripsi Dinamis -->
+                <h2 id="video-title" class="mb-3"></h2> 
+                <p id="video-desc" class="mb-4"></p>
+                
+                <div class="hero-buttons">
+                    <!-- Tombol Mulai Petualangan ke #fitur -->
+                    <a class="btn btn-light-custom" href="#fitur">Mulai Petualangan</a> 
+                    
+                    <!-- Tombol Pelajari Lebih Lanjut ke #kaki-halaman (Footer) -->
+                    <a class="btn btn-outline-custom" href="#kaki-halaman">Pelajari Lebih Lanjut</a> 
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+        
+        <section class="features-section" id="fitur">
+            <div class="container">
+                <h2 class="section-title">Mengapa Alam Bercerita?</h2>
+                <p class="section-subtitle">Platform edukasi alam yang menggabungkan teknologi dan storytelling untuk pengalaman belajar yang tak terlupakan</p>
+
+                <div class="row g-4">
+                    <article class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                            <h3>Cerita Interaktif</h3>
+                            <p>Belajar tentang flora dan fauna Indonesia melalui cerita menarik yang dikemas dengan ilustrasi dan animasi memukau</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-vr-cardboard"></i></div>
+                            <h3>Eksplorasi Virtual</h3>
+                            <p>Jelajahi hutan hujan tropis, gunung berapi, dan ekosistem laut dalam pengalaman virtual 360 derajat</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Fakta Menarik</h3>
+                            <p>Temukan ribuan fakta unik tentang keanekaragaman hayati Indonesia yang jarang diketahui</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                            <h3>Galeri Fotografi</h3>
+                            <p>Koleksi foto dan video berkualitas tinggi dari berbagai ekosistem alam Indonesia</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-users"></i></div>
+                            <h3>Komunitas Pecinta Alam</h3>
+                            <p>Bergabung dengan ribuan pengguna lain yang peduli dengan pelestarian alam Indonesia</p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                            <h3>Gamifikasi Belajar</h3>
+                            <p>Raih badge dan pencapaian sambil belajar tentang alam melalui kuis dan tantangan seru</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="destinasi">
+            <div class="container">
+                <h2 class="section-title">Tahukah Kamu?</h2>
+                <p class="section-subtitle">Ayo cari tahu lebih banyak!</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure class="gallery-item">
+                            <img src="komodo.jpg" alt="Naga Purba yang Masih Hidup">
+                            <figcaption class="gallery-overlay">
+                                <h4>Naga Purba yang Masih Hidup</h4>
+                                <p>Spesies kadal terbesar di dunia yang bisa mencapai 3 meter, terletak di NTT.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="gallery-item">
+                            <img src="Danau Kakaban.jpg" alt="Danau Ubur-Ubur Tanpa Sengat">
+                            <figcaption class="gallery-overlay">
+                                <h4>Danau Ubur-Ubur Tanpa Sengat</h4>
+                                <p>Di Kepulauan Derawan, Kalimantan Timur ada danau berisi ribuan ubur-ubur jinak yang kehilangan sengatnya.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="gallery-item">
+                            <img src="Goa Gong Pacitan.jpg" alt="Goa Gong Pacitan">
+                            <figcaption class="gallery-overlay">
+                                <h4>Goa Gong Pacitan</h4>
+                                <p>Goa dengan stalaktit & stalagmit berkilau indah</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="gallery-item">
+                            <img src="lithops.jpg" alt="Lithops">
+                            <figcaption class="gallery-overlay">
+                                <h4>Lithops</h4>
+                                <p>Tanaman sukulen mirip batu.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="gallery-item">
+                            <img src="Kawah Ijen.jpg" alt="Blue Fire Kawah Ijen">
+                            <figcaption class="gallery-overlay">
+                                <h4>Blue Fire Kawah Ijen</h4>
+                                <p>Keindahan api biru yang hanya ada di Indonesia, terletak di Banyuwangi, Jawa Timur.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="gallery-item">
+                            <img src="pesut.jpg" alt="Pesut Mahakam">
+                            <figcaption class="gallery-overlay">
+                                <h4>Pesut Mahakam</h4>
+                                <p>Kenali spesies unik yang hanya ada di Indonesia lebih tepatnya di Kalimantan Timur. Lumba-lumba Air Tawar di Sungai Mahakam.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="row">
+                    <article class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="1500">0</span>
+                            <p class="stat-label">Cerita Alam</p>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="50000">0</span>
+                            <p class="stat-label">Pengguna Aktif</p>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="250">0</span>
+                            <p class="stat-label">Destinasi Virtual</p>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="10000">0</span>
+                            <p class="stat-label">Fakta Menarik</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="tentang">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Siap Memulai Petualangan?</h2>
+                    <p>Bergabunglah dengan ribuan pengguna yang telah menemukan cara baru untuk mengenal dan mencintai alam Indonesia</p>
+                    <button class="btn btn-primary-custom btn-lg">Daftar Gratis Sekarang</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER KINI MEMILIKI ID AGAR BISA DI TARGET OLEH TOMBOL -->
+    <footer id="kaki-halaman">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-brand">🌿 Alam Bercerita</h5>
+                    <p style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Platform edukasi digital yang mengajak generasi muda mengenal dan mencintai kekayaan alam Indonesia.</p>
+                    <nav class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </nav>
+                </div>
+                
+                <nav class="col-md-2 col-6 mb-4 footer-links">
+                    <h5>Eksplorasi</h5>
+                    <ul>
+                        <li><a href="#">Cerita Alam</a></li>
+                        <li><a href="#">Virtual Tour</a></li>
+                        <li><a href="#">Galeri Foto</a></li>
+                        <li><a href="#">Fakta Menarik</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-md-2 col-6 mb-4 footer-links">
+                    <h5>Tentang</h5>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Tim Kami</a></li>
+                        <li><a href="#">Mitra</a></li>
+                        <li><a href="#">Karir</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-md-2 col-6 mb-4 footer-links">
+                    <h5>Dukungan</h5>
+                    <ul>
+                        <li><a href="#">Pusat Bantuan</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-md-2 col-6 mb-4 footer-links">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Cookie</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alam Bercerita. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
